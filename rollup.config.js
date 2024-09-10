@@ -1,8 +1,8 @@
-import commonjs from "@rollup/plugin-commonjs";
-import json from '@rollup/plugin-json';
-import resolve from "@rollup/plugin-node-resolve";
+const commonjs = require("@rollup/plugin-commonjs");
+const json = require("@rollup/plugin-json");
+const resolve = require("@rollup/plugin-node-resolve");
 
-export default [
+module.exports = [
   {
     input: "index.js",
     output: {
