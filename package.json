@@ -4,7 +4,6 @@
   "description": "Generate TinaCMS schemas for AstroJS projects.",
   "main": "index.cjs",
   "module": "index.mjs",
-  "type": "commonjs",
   "bin": {
     "tina-schema-generator": "index.cjs"
   },
