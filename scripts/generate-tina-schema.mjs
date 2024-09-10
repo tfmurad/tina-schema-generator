@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
-const path = require("path");
-const matter = require("gray-matter");
+import fs from 'fs';
+import matter from 'gray-matter';
+import path from 'path';
 
 function main() {
   const contentDir = path.join("src", "content");
