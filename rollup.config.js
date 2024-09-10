@@ -8,6 +8,7 @@ export default [
     output: {
       file: "index.cjs",
       format: "cjs",
+      banner: "#!/usr/bin/env node",
     },
     plugins: [resolve(), commonjs(), json()],
   },
@@ -16,7 +17,8 @@ export default [
     output: {
       file: "index.mjs",
       format: "es",
+      banner: "#!/usr/bin/env node",
     },
     plugins: [resolve(), commonjs(), json()],
-  },
+  }
 ];

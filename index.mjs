@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import require$$0$5 from 'fs';
 import require$$1$2 from 'path';
 import require$$0$3 from 'util';
