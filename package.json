@@ -4,17 +4,19 @@
   "description": "Generate TinaCMS schemas for AstroJS projects.",
   "main": "index.cjs",
   "module": "index.mjs",
+  "type": "commonjs",
   "bin": {
     "tina-schema-generator": "index.cjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
+    "build": "rollup -c --bundleConfigAsCjs",
     "generate-tina-schema-cjs": "node ./scripts/generate-tina-schema.cjs",
     "generate-tina-schema-mjs": "node ./scripts/generate-tina-schema.mjs"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.3.2",
+    "@rollup/plugin-json": "^6.1.0",
     "axios": "^1.7.2",
     "gray-matter": "^4.0.3"
   },
